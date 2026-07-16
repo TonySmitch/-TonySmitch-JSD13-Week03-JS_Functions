@@ -1,4 +1,4 @@
-import { foodTruckd } from "foodTruckDB.js";
+import { foodTruck} from "../fakeData/foodTruckDB.js";
 
 // Stage 1: Reading object properties
 //
