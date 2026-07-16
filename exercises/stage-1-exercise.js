@@ -13,7 +13,7 @@ import { foodTruck } from "../fakeData/foodTruckDB.js";
 // Expected output: "Chrome and Burger"
 
 function getTruckName(truck) {
-  // TODO: your code here
+  return `${truck.name}`
 }
 
 console.log(getTruckName(foodTruck));
@@ -27,7 +27,7 @@ console.log(getTruckName(foodTruck));
 // Expected output: true
 
 function isTruckOpen(truck) {
-  // TODO: your code here
+   return `${truck.isOpen}`
 }
 
 console.log(isTruckOpen(foodTruck));
@@ -40,7 +40,7 @@ console.log(isTruckOpen(foodTruck));
 // Expected output: 10000
 
 function getDailySalesTarget(truck) {
-  // TODO: your code here
+  return `${truck.dailySalesTarget}`
 }
 
 console.log(getDailySalesTarget(foodTruck));
@@ -54,7 +54,7 @@ console.log(getDailySalesTarget(foodTruck));
 // Expected output: "Chrome and Burger is located in Bangkok."
 
 function describeTruck(truck) {
-  // TODO: your code here
+  return `${truck.name} is located in ${truck.location}`
 }
 
 console.log(describeTruck(foodTruck));

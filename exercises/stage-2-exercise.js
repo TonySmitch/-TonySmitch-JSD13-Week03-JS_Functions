@@ -13,7 +13,7 @@ import { menuItems } from "../fakeData/foodTruckDB.js";
 // Expected output: 5
 
 function countMenuItems(items) {
-  // TODO: your code here
+  return items.length;
 }
 
 console.log(countMenuItems(menuItems));
@@ -26,7 +26,7 @@ console.log(countMenuItems(menuItems));
 // Expected output: { id: 1, name: "Chrome Classic", category: "burger", price: 180, isAvailable: true, stock: 12 }
 
 function getFirstMenuItem(items) {
-  // TODO: your code here
+  return items[0];
 }
 
 console.log(getFirstMenuItem(menuItems));
@@ -39,7 +39,7 @@ console.log(getFirstMenuItem(menuItems));
 // Expected output: "Chrome Classic"
 
 function getFirstItemName(items) {
-  // TODO: your code here
+   return items[0].name;
 }
 
 console.log(getFirstItemName(menuItems));
@@ -53,7 +53,7 @@ console.log(getFirstItemName(menuItems));
 // Expected output: { id: 5, name: "Spicy Gear Burger", ... }
 
 function getLastMenuItem(items) {
-  // TODO: your code here
+   return items[items.length-1];
 }
 
 console.log(getLastMenuItem(menuItems));
@@ -66,7 +66,7 @@ console.log(getLastMenuItem(menuItems));
 // Expected output: 220
 
 function getLastItemPrice(items) {
-  // TODO: your code here
+  return items[items.length-1].price;
 }
 
 console.log(getLastItemPrice(menuItems));
