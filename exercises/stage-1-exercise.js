@@ -13,7 +13,11 @@ import { foodTruck } from "../fakeData/foodTruckDB.js";
 // Expected output: "Chrome and Burger"
 
 function getTruckName(truck) {
+<<<<<<< HEAD
   return truck.name;
+=======
+  return `${truck.name}`
+>>>>>>> c98d5637ce32a36efeb477a83b7b74ad761add83
 }
 
 console.log(getTruckName(foodTruck));
@@ -27,8 +31,12 @@ console.log(getTruckName(foodTruck));
 // Expected output: true
 
 function isTruckOpen(truck) {
+<<<<<<< HEAD
   // TODO: your code here
   return truck.isOpen;
+=======
+   return `${truck.isOpen}`
+>>>>>>> c98d5637ce32a36efeb477a83b7b74ad761add83
 }
 
 console.log(isTruckOpen(foodTruck));
@@ -41,8 +49,12 @@ console.log(isTruckOpen(foodTruck));
 // Expected output: 10000
 
 function getDailySalesTarget(truck) {
+<<<<<<< HEAD
   // TODO: your code here
   return truck.dailySalesTarget;
+=======
+  return `${truck.dailySalesTarget}`
+>>>>>>> c98d5637ce32a36efeb477a83b7b74ad761add83
 }
 
 console.log(getDailySalesTarget(foodTruck));
@@ -56,9 +68,17 @@ console.log(getDailySalesTarget(foodTruck));
 // Expected output: "Chrome and Burger is located in Bangkok."
 
 function describeTruck(truck) {
+<<<<<<< HEAD
   // TODO: your code here
   return `${truck.name} is located in ${truck.location}.`;
 }
 
 console.log(describeTruck(foodTruck));
 // "Chrome and Burger is located in Bangkok."
+=======
+  return `${truck.name} is located in ${truck.location}`
+}
+
+console.log(describeTruck(foodTruck));
+// "Chrome and Burger is located in Bangkok."
+>>>>>>> c98d5637ce32a36efeb477a83b7b74ad761add83
