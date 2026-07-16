@@ -27,6 +27,7 @@ console.log(countMenuItems(menuItems));
 
 function getFirstMenuItem(items) {
   return items[0];
+  
 }
 
 console.log(getFirstMenuItem(menuItems));

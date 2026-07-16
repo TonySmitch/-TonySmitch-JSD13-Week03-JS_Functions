@@ -19,6 +19,7 @@ import { menuItems, orders } from "../fakeData/foodTruckDB.js";
 
 function findMenuItemById(items, itemId) {
   // TODO: your code here
+  return items.find(item => item.id === itemId);
 }
 
 console.log(findMenuItemById(menuItems, 2));
@@ -32,6 +33,7 @@ console.log(findMenuItemById(menuItems, 2));
 
 function findMenuItemByName(items, itemName) {
   // TODO: your code here
+  return items.find(item => item.name === itemName);
 }
 
 console.log(findMenuItemByName(menuItems, "Spicy Gear Burger"));
@@ -45,6 +47,7 @@ console.log(findMenuItemByName(menuItems, "Spicy Gear Burger"));
 
 function findOrderById(orderList, orderId) {
   // TODO: your code here
+  return orderList.find(order => order.id === orderId);
 }
 
 console.log(findOrderById(orders, "ORD-002"));
@@ -62,6 +65,7 @@ console.log(findOrderById(orders, "ORD-002"));
 
 function getMenuItemNameById(items, itemId) {
   // TODO: your code here
+  return items.find(item => item.id === itemId)?.name || "Menu item not found";
 }
 
 console.log(getMenuItemNameById(menuItems, 2));
