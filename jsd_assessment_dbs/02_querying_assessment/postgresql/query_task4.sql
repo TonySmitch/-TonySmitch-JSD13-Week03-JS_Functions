@@ -4,17 +4,18 @@
 -- which ingredients depend on that supplier, so they can assess the impact on the menu.
 --
 -- Hint: Write a query to find the names of all ingredients supplied by 'Freshest Farm Produce'.
-SELECT name, stock_level, supplier_id
-FROM ingredients
-WHERE supplier_id = (
+SELECT name, stock_level, supplier_id --เลือกชื่อวัตถุดิบ, ระดับสต็อก, และ supplier_id
+FROM ingredients --เลือกจากตาราง ingredients
+WHERE supplier_id = ( --ใช้เงื่อนไขในการกรองข้อมูลโดยใช้ supplier_id ที่ตรงกับชื่อซัพพลายเออร์ 'Freshest Farm Produce'
     SELECT supplier_id
     FROM suppliers
     WHERE name = 'Freshest Farm Produce'
 );
 -- Bonus: The dataset is identical in the MongoDB database, meaning the same business insight can be retrieved.
 -- Write the equivalent query for MongoDB. See query_task4_bonus.mongodb.js
-SELECT SUM(total_price) AS total_revenue
-FROM orders;
+SELECT SUM(total_price) AS total_revenue--นับผลรวมของราคาสินค้าทั้งหมดและตั้งชื่อคอลัมน์เป็น total_revenue
+FROM orders;--เลือกจากตาราง orders
+
 -- ---------------------------------------------------------------
 -- Your thinking process (required)
 -- ---------------------------------------------------------------
