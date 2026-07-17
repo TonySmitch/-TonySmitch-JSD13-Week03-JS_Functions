@@ -7,7 +7,13 @@
 
 -- Bonus: The dataset is identical in the MongoDB database, meaning the same business insight can be retrieved.
 -- Write the equivalent query for MongoDB. See query_task2_bonus.mongodb.js
-
+-- จากโจทย์์ใน query_task2_bonus.mongodb.js จงเขียนคำสั่งค้นหาเพื่อหาคำสั่งซื้อทั้งหมดที่พนักงาน "Jane Doe" ดูแลอยู่
+-- คำสั่งค้นหาของคุณควรคืนค่าเฉพาะฟิลด์ order_date และ total_price สำหรับคำสั่งซื้อเหล่านี้เท่านั้น
+SELECT order_date, total_price -- ทำการใช้่คำสั่ง SELECT เพื่อค้นหา order_date และ total_price
+FROM orders --จากตาราง orders
+INNER JOIN staff ON orders.staff_id = staff.staff_id --โดยการใช้ INNER JOIN เพื่อเชื่อมตาราง orders และ staff 
+--โดยตรวจสอบ Field order.staff_id=staff.staff_id(FK)ที่มีค่าตรงกัน
+WHERE staff.first_name= 'Jane' and staff.last_name = 'Doe';--โดยมีเงื่อนไข ชื่อของพนักงานจะต้องเป็น Jane นามสกุล Doe
 -- ---------------------------------------------------------------
 -- Your thinking process (required)
 -- ---------------------------------------------------------------
@@ -15,6 +21,8 @@
 -- interpreted the task, what data you need, which table(s) are
 -- involved, and what SQL concepts you plan to use.
 -- Write in English or Thai. Do not skip this step.
---
--- Your thinking:
---
+-- Your thinking:--
+--ใช้คำสัง SELECT เพื่อเลือก Field ที่ต้องการค้นหา
+SELECT first_name, last_name ใช้คำสัง --SELECT เพื่อเลือก Field ที่ต้องการค้นหา คือ first_name และ last_name
+FROM staff --จากตารางชื่อ staff
+WHERE role = 'Cook'; --กำหนดเงื่อนไขให้เลือกเฉพาะตำแหน่ง 'Cook'

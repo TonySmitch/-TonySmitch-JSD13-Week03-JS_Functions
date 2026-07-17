@@ -5,10 +5,10 @@
 //
 // Hint: Write an aggregation query on the orders collection to calculate the total revenue from all orders combined.
 // The result should be a single document with a field named total_revenue.
-
+use ("chrome-burger-db-JSD13");
 // Bonus: The dataset is identical in the PostgreSQL database, meaning the same business insight can be retrieved.
 // Write the equivalent query for PostgreSQL. See query_task4_bonus.sql
-
+use ("chrome-burger-db-JSD13");
 // ---------------------------------------------------------------
 // Your thinking process (required)
 // ---------------------------------------------------------------
