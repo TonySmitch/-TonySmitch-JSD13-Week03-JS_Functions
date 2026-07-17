@@ -6,10 +6,13 @@
 // Hint: Write a query to find all orders handled by the staff member "Jane Doe".
 // Your query should only return the order_date and total_price fields for these orders.
 
-
 // Bonus: The dataset is identical in the PostgreSQL database, meaning the same business insight can be retrieved.
 // Write the equivalent query for PostgreSQL. See query_task2_bonus.sql
-
+use ("chrome-burger-db-JSD13");//เรียกใช้ฐานข้อมูล chrome-burger-db-JSD13
+db.staff.find(//ใช้คำสั่ง find เพื่อค้นหา ตำแหน่ง "Cook"
+  { role: "Cook" },                
+  { first_name: 1, last_name: 1 }  //หมายถึงแสดงชื่อ และ นามสกุล หากต้องการซ่อนส่วนใดส่วนหนึ่งให้เปลี่ยนจาก 1 เป็น 0
+)
 // ---------------------------------------------------------------
 // Your thinking process (required)
 // ---------------------------------------------------------------

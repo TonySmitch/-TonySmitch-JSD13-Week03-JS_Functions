@@ -4,8 +4,8 @@
 // so they can offer good value without cutting too deep into margins.
 //
 // Hint: Write a query to find all menu items in the menu_items collection that have a price less than 10.00.
-use ("chrome-burger-db-JSD13");
-db.menu_items.find ({ price: { $lt: 10.00 } });
+use ("chrome-burger-db-JSD13");//เรียกใช้ฐานข้อมูล chrome-burger-db-JSD13
+db.menu_items.find ({ price: { $lt: 10.00 } });//ค้นหาราคาจากตาราง menu_items ที่มีราคาต่ำกว่า $10.00
 
 // Bonus: The dataset is identical in the PostgreSQL database, meaning the same business insight can be retrieved.
 // Write the equivalent query for PostgreSQL. See query_task1_bonus.sql
